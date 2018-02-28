@@ -1,0 +1,65 @@
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background: #fff;
+}
+
+section {
+    overflow-y: scroll;
+    margin-bottom: 13.33vw;
+}
+
+.list {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.list li a {
+    width: 92%;
+    height: auto;
+    padding: 3.0vw 4%;
+    display: flex;
+    flex-direction: row;
+    font-size: 3.47vw;
+    color: #999;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.doctorInfo {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-start;
+    margin-left: 5.0vw;
+}
+
+.hospital {
+    margin-top: 2.0vw;
+}
+
+.doctorDetial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.doctorPhoto {
+    width: 10.93vw;
+    height: 10.93vw;
+}
+
+.doctorName {
+    color: #2D2D2D;
+    font-size: 4.0vw;
+}
+
+.doctorInfo .doctorSty {
+    width: 83%;
+}
+
+.jifen {
+    color: #FEC173;
+}

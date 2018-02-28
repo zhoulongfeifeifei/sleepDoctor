@@ -1,0 +1,157 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	background: #F1F1F1;
+}
+#container1{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height:100%;
+	background: #F1F1F1;
+	overflow-y: scroll;
+}
+header{
+	background: #fff;
+}
+.doctorDetail{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #A9AAAD;
+	font-size: 3.47vw;
+}
+.doctorDetail .doctorName{
+	color: #2E323A;
+	font-size: 4.0vw;
+	margin: 3.6vw 0;
+} 
+.doctorDetail img{
+	border-radius: 50%;
+	margin-top: 4.4vw;
+}
+.doctorHospital{
+	margin-bottom: 6.0vw;
+}
+.doctorChievement{
+	width: 90%;
+	height: 9.86vw;
+	margin: 3.0vw auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	color: #A9AAAD;
+	font-size: 3.2vw;
+}
+.doctorChievement .line{
+	width: 1px;
+	height: 10.86vw;
+	background: #CFD8E1;
+}
+.doctorChievement p{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.doctorChievement .spanSecon{
+	margin-top: 1.0vw;
+}
+.doctorChievement .number{
+	font-size: 4.0vw;
+	color: #2A2A2A;
+}
+.doctorChievement .number1{
+	color: #FEC173;
+	font-size: 4.0vw;
+}
+nav{
+	width: 91.6%;
+	height: 24.0vw;
+	padding: 2.0vw 4.2%;
+	background: #fff;
+	font-size: 3.47vw;
+	color: #2E323A;
+	margin: 3.0vw 0;
+}
+nav h3{
+	font-size: 4.0vw;
+	color: #A9AAAD;
+}
+nav p{
+	height: 13.33vw;
+	line-height: 6.93vw;
+	margin-top: 2.0vw;
+	overflow-y: scroll;
+}
+.zxrd{
+	width: 91.6%;
+	padding: 0 4.2%;
+	background: #fff;
+	font-size: 3.2vw;
+	color: #A9AAAD;
+	margin-bottom: 3.0vw;
+}
+.zxrd h3{
+	font-size: 4.0vw;
+}
+.zxrd ul{
+	width: 100%;
+	height: 20.26vw;
+	overflow-y: scroll;
+}
+.zxrd .rdList li{
+	height: 6.4vw;
+	padding:0 2.67vw;
+	text-align: center;
+	line-height: 6.4vw;
+	margin-right: 3.2vw;
+	margin-top: 3.2vw;
+	border-radius: 8px;
+	border:1px solid #A9AAAD;
+	display: inline-block;
+	background: #fff;
+}
+.probleDescription{
+	width: 91.6%;
+	padding: 3.0vw 4.2%;
+	background: #fff;
+	font-size: 3.73vw;
+	color: #A9AAAD;
+	border-bottom: 1px solid #A9AAAD;
+}
+.phonetIimer{
+	height: 9.06vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.probleDescription .doctorTit{
+	color: #2D2D2D;
+}
+.miaosu{
+	line-height: 6.93vw;
+}
+.commentar{
+	width: 91.6%;
+	padding: 0 4.2%;
+	height: 10.4vw;
+	background: #fff;
+	color: #A9AAAD;
+	font-size: 3.73vw;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.nowConsult{
+	width: 100%;
+	height: 13.06vw;
+	background-color: #78A7EF;
+	color: #fff;
+	text-align: center;
+	line-height: 13.06vw;
+	font-size: 4.0vw;
+}

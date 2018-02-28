@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0.minimum-scale=1.0,user-scalable=no,width=device-width">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <title>我的</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/mine.css" />
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <img src="../imgs/user_pic_yuan@1x.png" class="photoHeade" alt="" />
+            <div class="userInfo">
+                <spna class="userName">张三</spna>
+                <span class="userSex">男 18岁</span>
+            </div>
+        </header>
+        <nav></nav>
+        <section>
+            <ul class="userList">
+                <li class="zixun">
+                    <div class="uesrLeft"><img src="../imgs/mine_quiz@1x.png" /><span>我的回答</span></div>
+                    <div class="uesrRight"><span>0</span><img src="../imgs/mine_next@1x.png" alt="" /></div>
+                </li>
+                <li class="recode">
+                    <div class="uesrLeft"><img src="../imgs/mine_list@1x.png" /><span>收款明细</span></div>
+                    <div class="uesrRight"><img src="../imgs/mine_next@1x.png" alt="" /></div>
+                </li>
+                <li class="lastLi">
+                    <div class="uesrLeft"><img src="../imgs/mine_list@1x.png" /><span>退出登录</span></div>
+                    <div class="uesrRight"><img src="../imgs/mine_next@1x.png" alt="" /></div>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <ul>
+                <li class="footerFirst">
+                    <a href="doctorIndex.html"><img src="../imgs/tab_quiz_normal@1x.png" alt="" /></a>
+                </li>
+                <li class="footerSecond">
+                    <a href="expertsBar.html"><img src="../imgs/tab_honor_normal@1x.png" /></a>
+                </li>
+                <li class="footerThirt">
+                    <a href="#"><img src="../imgs/tab_mine_selcet@1x.png" alt="" /></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+<script>
+    $('.zixun').click(function() {
+        window.location.href = "myAdvice.html";
+    });
+    $('.recode').click(function() {
+        window.location.href = "record.html?recordType=1";
+    });
+    $('.photoHeade').click(function() {
+        window.location.href = "doctorProfile.html";
+    })
+    $('.lastLi').click(function() {
+        window.location.href = "doctorLogin.html";
+    })
+</script>
+
+</html>

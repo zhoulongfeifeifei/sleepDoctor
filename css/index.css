@@ -1,0 +1,137 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	background-color: #F1F1F1;
+	box-sizing: border-box;
+}
+#container{
+	display: flex;
+	flex-direction: column;
+	height:100%;
+}
+header{
+	width: 100%;
+	background-color: #fff;
+	height: 26.13vw;
+	z-index: 2;
+	margin-bottom: 2px;
+	position: fixed;
+	top: 0;
+}
+#search{
+	display: block;
+	width: 92%;
+	height: 9.6vw;
+	text-align: center;
+	background-color: #f1f1f1;
+	color: #A9AAAD;
+	font-size: 3.2vw;
+	border-radius: 8px;
+	margin: 0 auto;
+	margin-top: 2.13vw;
+}
+.consult{
+	width: 62.7%;
+	margin: 0 auto;
+}
+.consult li{
+	width: 16.6vw;
+	font-size: 4.0vw;
+	color: #A9AAAD;
+	padding: 4.27vw 0 3.47vw 0;
+	text-align: center;
+	border-bottom: 0.8vw solid #fff;
+}
+.consult li:nth-child(1){
+	float: left;
+}
+.consult li:nth-child(2){
+	float: right;
+}
+.consult .active{
+	color: #78A7EF;
+	border-bottom: 0.8vw solid #78A7EF;
+}
+nav{
+	width: 100%;
+	background-color: #fff;
+	z-index: 2;
+	position: fixed;
+	top: 26.14vw;
+	border-top: 2.13vw solid #F1F1F1;
+}
+.fastConsult{
+	width: 91%;
+	height: 18.67vw;
+	display: flex;
+	flex-direction: row;
+	font-size: 4.53vw;
+	color: #2E323A;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.leftConsult{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+/*中间部分*/
+.khfxWarp{
+	font-size: 3.47vw;
+	background: #fff;
+	margin-top: 54.14vw;
+}
+section{
+	width: 100%;	 
+	background-color: #fff;
+	font-size: 3.47vw;
+	overflow-y: scroll;
+}
+section ul li{
+	padding: 3.0vw 4.4vw;
+	border-bottom:1px solid #999;
+}
+section ul li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+section ul li p{
+	line-height: 8.0vw;
+	font-size: 4.0vw;
+	color: #2D2D2D;
+}
+section ul li p .xuanMoney{
+	font-size: 3.2vw;
+	color: #fff;
+	background: #000000;
+	padding: 2px;
+	margin-right: 4px;
+    background: -moz-linear-gradient(left,  #FEC173 0%, #FE8753 100%);
+    background: -webkit-gradient(linear, left, right, color-stop(0%,#FEC173), color-stop(100%,#FE8753));
+    background: -webkit-linear-gradient(left,  #FEC173 0%,#FE8753 100%);
+    background: -o-linear-gradient(left,  #FEC173 0%, #FE8753 100%);
+    background: -ms-linear-gradient(left,  #FEC173 0%, #FE8753 100%);
+    background: linear-gradient(to right,  #FEC173 0%, #FE8753 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FEC173', endColorstr='#FE8753',GradientType=0 );
+    border-radius: 5px;
+}
+.qusition{
+	width: 100%;
+	height: 8.0vw;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	line-height: 8.0vw;
+	justify-content: space-between;
+	color: #A9AAAD;
+}
+.timer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+section ul li .qusition .number{
+	color: #78A7EF;
+}

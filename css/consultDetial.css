@@ -1,0 +1,122 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	background-color: #F1F1F1;
+	box-sizing: border-box;
+}
+#container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height:100%;
+}
+header{
+	padding: 3.0vw 4.4vw;
+    border-bottom: 1px solid #999;	
+    background: #fff;
+}
+header p{
+	line-height: 8.0vw;
+    font-size: 4.0vw;
+    color: #2D2D2D;
+}
+.qusition{
+	width: 100%;
+    height: 8.0vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    line-height: 8.0vw;
+    justify-content: space-between;
+    color: #A9AAAD;
+    font-size: 3.47vw;
+}
+.timer{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.qusition .timer .number{
+	color: #78A7EF;
+}
+.consultList,.repconsultList{
+	width: 100%;
+	height: 18.8vw;
+    background-color: #fff;
+    font-size: 3.47vw;
+    overflow-y: scroll;
+    margin-top: 2.0vw;
+}
+.consultList li,.repconsultList li{
+	padding: 3.0vw 4.4vw;
+    border-bottom: 1px solid #999;
+}
+.aboutDoctor,.repaboutDoctor{
+	width: 100%;
+    height: 8.0vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    line-height: 8.0vw;
+    justify-content: space-between;
+    color: #A9AAAD;
+}
+.doctorDetial,.repdoctorDetial{
+	 display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+.doctorDetial span,.repdoctorDetial span{
+	padding: 0 1.0vw;
+}
+.doctorDetial .doctorName,.repdoctorDetial .repdoctorName{
+	color: #78A7EF;
+}
+nav{
+	height:13.6vw;
+	padding: 0 4.4vw;
+	font-size: 3.47vw;
+	color: #999;
+	line-height: 13.6vw;
+}
+.suppleQuestions{
+	width: 100%;
+	height: 24.45vw;
+    background-color: #fff;
+    font-size: 4.0vw;
+    overflow-y: scroll;
+}
+.suppleQuestions li{
+	padding: 3.0vw 4.4vw;
+    border-bottom: 1px solid #999;
+}
+.suppleQuestions li .supperTimer{
+	color: #999999;
+	font-size: 3.47vw;
+	margin-top: 3.0vw;
+}
+.supperTimer .hours{
+	margin-left: 2.0vw;
+}
+.myPro{
+	padding: 0 4.4vw;
+	border-bottom: 1px solid #999;
+	font-size: 3.47vw;
+	background: #fff;
+}
+.commentaries{
+	padding-top: 4.4vw;
+	font-size: 4.0vw;
+	color: #2D2D2D;	
+}
+.pinfen{
+	display: flex;
+	height: 11.33vw;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.starList li{
+	float: left;
+}

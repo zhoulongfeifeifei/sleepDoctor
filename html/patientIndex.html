@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="all" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="description" content="" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>睡眠医生</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/dropload.css">
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <header class="tabHead">
+            <input type="text" id="search" placeholder="搜索睡眠改善" value/>
+            <ul class="consult" consultType="0">
+                <li id="free" class="active">免费咨询</li>
+                <li id="charges">悬赏咨询</li>
+            </ul>
+        </header>
+        <nav>
+            <div class="fastConsult" id="fastConsult" type="0">
+                <div class="leftConsult"><img src="../imgs/free_quiz.png" alt="" /><span>快速提问</span></div>
+                <img class="next" src="../imgs/next.png" alt="" />
+            </div>
+            <div class="fastConsult" id="xuanConsoult" type="1">
+                <div class="leftConsult"><img src="../imgs/free_quiz.png" alt="" /><span>悬赏询问</span></div>
+                <img class="next" src="../imgs/next.png" alt="" />
+            </div>
+        </nav>
+        <article class="khfxWarp">
+            <section class="khfxPane" style="display:block">
+                <ul id="scroll-list1"></ul>
+            </section>
+
+            <section class="khfxPane">
+                <ul id="scroll-list2"></ul>
+            </section>
+
+            <section class="khfxPane">
+                <ul id="scroll-list3"></ul>
+            </section>
+        </article>
+        <footer>
+            <ul>
+                <li class="footerFirst">
+                    <a href="#"><img src="../imgs/tab_quiz_selcet@1x.png" alt="" /></a>
+                </li>
+                <li class="footerSecond">
+                    <a href="expertsBar.html"><img src="../imgs/tab_zhuanjia_normal@1x.png" /></a>
+                </li>
+                <li class="footerThirt">
+                    <a href="mine.html"><img src="../imgs/tab_mine_normal@1x.png" alt="" /></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/dropload.min.js"></script>
+    <script src="../js/patientIndex.js"></script>
+    <script type="text/javascript">
+        $('#xuanConsoult').hide();
+        $('#xuanQusition').hide();
+
+        $('.consult li').click(function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+        $('#free').click(function() {
+            $(this).parent().attr('consultType', 0);
+            $("#fastConsult").show();
+            $('#xuanConsoult').hide();
+            $("#fastQusition").show();
+            $('#xuanQusition').hide();
+        });
+        $("#charges").click(function() {
+            $(this).parent().attr('consultType', 1);
+            var consultType = $(this).parent().attr('consultType');
+            $("#fastConsult").hide();
+            $('#xuanConsoult').css("display", "flex")
+            $("#fastQusition").hide();
+            $('#xuanQusition').show();
+        });
+        $('#fastConsult').click(function() {
+            var type = $(this).attr("type");
+            window.location.href = "releaseConsult.html?type=" + type;
+        });
+        $('#xuanConsoult').click(function() {
+            var type = $(this).attr("type");
+            window.location.href = "releaseConsult.html?type=" + type;
+        });
+
+        function footerPosition() {
+            $("footer").removeClass("fixed-bottom");
+            $('section').addClass('heIght');
+            var contentHeight = document.body.scrollHeight, //网页正文全文高度
+                winHeight = window.innerHeight - 60; //可视窗口高度，不包括浏览器顶部工具栏
+            if (!(contentHeight < winHeight)) {
+                //当网页正文高度小于可视窗口高度时，为footer添加类fixed-bottom
+                $("footer").addClass("fixed-bottom");
+                $('section').removeClass('heIght')
+            }
+        }
+        footerPosition();
+    </script>
+</body>
+
+</html>

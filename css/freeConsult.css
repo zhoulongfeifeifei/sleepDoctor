@@ -1,0 +1,138 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	background-color: #F1F1F1;
+	box-sizing: border-box;
+}
+#container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height:100%;
+}
+header{
+	padding: 3.0vw 4.4vw;
+    border-bottom: 1px solid #999;	
+    background: #fff;
+}
+header p{
+	line-height: 8.0vw;
+    font-size: 4.0vw;
+    color: #2D2D2D;
+}
+.qusition{
+	width: 100%;
+    height: 8.0vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    line-height: 8.0vw;
+    justify-content: space-between;
+    color: #A9AAAD;
+    font-size: 3.47vw;
+}
+.timer{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.qusition .timer .number{
+	color: #78A7EF;
+}
+section{
+	overflow-y: scroll;
+}
+.consultList,.repconsultList{
+	width: 100%;
+	height: 18.67vw;
+    background-color: #fff;
+    font-size: 3.47vw;
+    overflow-y: scroll;
+}
+.consultList li,.repconsultList li{
+	padding: 3.0vw 4.4vw;
+    border-bottom: 1px solid #999;
+}
+.aboutDoctor,.repaboutDoctor{
+	width: 100%;
+    height: 8.0vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    line-height: 8.0vw;
+    justify-content: space-between;
+    color: #A9AAAD;
+}
+.doctorDetial,.doctorAppraise,.repdoctorDetial,.repdoctorAppraise{
+	 display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+.doctorDetial span{
+	padding: 0 1.0vw;
+}
+.doctorDetial .doctorName,.doctorAppraise .doctorName,.repdoctorAppraise  .repdoctorName{
+	color: #78A7EF;
+}
+nav{
+	height: 13.6vw;
+    padding: 0 4.4vw;
+    font-size: 3.47vw;
+    color: #999;
+    line-height: 13.6vw;
+}
+.suppleQuestions{
+	width: 100%;
+    height: 24.45vw;
+    background-color: #fff;
+    font-size: 4.0vw;
+    overflow-y: scroll;
+}
+.suppleQuestions li {
+    padding: 3.0vw 4.4vw;
+    border-bottom: 1px solid #999;
+}
+.suppleQuestions li .supperTimer {
+    color: #999999;
+    font-size: 3.47vw;
+    margin-top: 3.0vw;
+}
+.supperTimer .hours {
+    margin-left: 2.0vw;
+}
+footer{
+	width: 92.8%;
+	background: #fff;
+	height: 9.06vw;
+	padding: 2.0vw 4%;
+}
+.fixed-bottom{
+	position: fixed;
+    bottom: 0;
+}
+footer input{
+	width: 77.6%;
+	height: 9.06vw;
+	float: left;
+}
+footer button{
+	width: 19%;
+	height: 9.06vw;
+	float: right;
+	background: #78A7EF;
+	color: #fff;
+	font-size: 3.73vw;
+	line-height: 9.06vw;
+	text-align: center;
+	border-radius: 8px;
+}
+.continueAsk{
+	width: 100%;
+	height: 9.06vw;
+	background: #78A7EF;
+	color: #fff;
+	font-size: 4.0vw;
+	line-height: 9.06vw;
+	text-align: center;
+}

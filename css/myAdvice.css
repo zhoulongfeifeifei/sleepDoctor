@@ -1,0 +1,81 @@
+body,html{
+	width: 100%;
+	height: 100%;
+}
+#container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height:100%;
+	background: #F1F1F1;
+}
+.adviceList{
+	width: 100%;
+    font-size: 4.0vw;
+    color: #2D2D2D;
+    overflow-y: scroll;
+}
+.adviceList li{
+    padding: 3.0vw 4.27vw;
+    font-size: 3.47vw;
+    color: #999;
+    border-bottom: 1px solid #F1F1F1;
+    background: #fff;
+}
+.adviceCenter{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.adviceCenter .doctorPhoto{
+	width: 10.93vw;
+    height: 10.93vw;
+}
+.adviceContainr{
+	display: flex;
+	flex-direction: row;
+}
+.adviceCenter .pingjia{
+	color: #78A7EF;
+}
+.doctorInfo{
+	margin-left: 5.0vw;
+	display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-start;
+}
+.doctorDetial{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.doctorDetial .doctorName{
+	color: #2D2D2D;
+    font-size: 4.0vw;
+}
+.adviceTitle{
+	font-size: 4.0vw;
+	color: #2D2D2D;
+	line-height: 6.0vw;
+	padding: 2.0vw 0;
+}
+.doctorFace{
+	position: relative;
+}
+.doctorFace .adviceNum{
+	position: absolute;
+	width: 4.8vw;
+	height: 4.8vw;
+	background: #FF6978;
+	color: #fff;
+	text-align: center;
+	line-height: 4.8vw;
+	font-size: 3.47vw;
+	top: -2.4vw;
+	right: -2.4vw;
+	border-radius: 50%;
+}
+.hospital{
+	margin-top: 2.0vw;
+}

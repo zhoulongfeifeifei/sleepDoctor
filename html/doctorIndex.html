@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="all" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <meta name="description" content="" />
+    <meta name="HandheldFriendly" content="true" />
+    <title>睡眠医生</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/dropload.css">
+    <style>
+        header {
+            width: 100%;
+            height: 14.13vw;
+            margin-bottom: 2px;
+            position: fixed;
+            top: 0;
+        }
+        
+        .consult {
+            width: 100%;
+        }
+        
+        .consult li {
+            float: left;
+            margin: 0 8%;
+        }
+        
+        .consult li:nth-child(2) {
+            float: left;
+        }
+    </style>
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <header class="tabHead">
+            <ul class="consult" consultType="0">
+                <li id="all" class="active">全部问题</li>
+                <li id="charges">悬赏问题</li>
+                <li id="free">免费问题</li>
+            </ul>
+        </header>
+        <article class="khfxWarp">
+            <section class="khfxPane" style="display:block">
+                <ul id="scroll-list"></ul>
+            </section>
+
+            <section class="khfxPane">
+                <ul id="scroll-list"></ul>
+            </section>
+
+            <section class="khfxPane">
+                <ul id="scroll-list"></ul>
+            </section>
+        </article>
+        <footer>
+            <ul>
+                <li class="footerFirst">
+                    <a href="#"><img src="../imgs/tab_quiz_selcet@1x.png" alt="" /></a>
+                </li>
+                <li class="footerSecond">
+                    <a href="honoursList.html"><img src="../imgs/tab_zhuanjia_normal@1x.png" /></a>
+                </li>
+                <li class="footerThirt">
+                    <a href="doctorMine.html"><img src="../imgs/tab_mine_normal@1x.png" alt="" /></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/dropload.min.js"></script>
+    <script src="../js/doctorIndex.js"></script>
+    <script type="text/javascript">
+        function footerPosition() {
+            $("footer").removeClass("fixed-bottom");
+            $('section').addClass('heIght');
+            var contentHeight = document.body.scrollHeight, //网页正文全文高度
+                winHeight = window.innerHeight - 60; //可视窗口高度，不包括浏览器顶部工具栏
+            if (!(contentHeight < winHeight)) {
+                //当网页正文高度小于可视窗口高度时，为footer添加类fixed-bottom
+                $("footer").addClass("fixed-bottom");
+                $('section').removeClass('heIght')
+            }
+        }
+        footerPosition();
+    </script>
+</body>
+
+</html>

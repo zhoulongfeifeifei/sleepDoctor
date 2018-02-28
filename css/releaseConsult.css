@@ -1,0 +1,146 @@
+body,
+html {
+    width: 100%;
+    height: auto;
+    background-color: #F1F1F1;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    width: 92%;
+    font-size: 3.73vw;
+    color: #2E323A;
+    padding: 0 4%;
+    background: #fff;
+}
+
+header input {
+    font-size: 3.73vw;
+}
+
+.head {
+    float: left;
+    width: 50%;
+    height: 11.2vw;
+    line-height: 11.2vw;
+}
+
+.head input {
+    width: 80%;
+    height: 6.2vw;
+}
+
+section {
+    overflow-y: scroll;
+    width: 92%;
+    padding: 0 4%;
+    background: #fff;
+}
+
+section textarea {
+    width: 100%;
+    height: 31.2vw;
+    display: block;
+    border: 1px solid #CFD8E1;
+    border-left: 0;
+    border-right: 0;
+    overflow-y: scroll;
+    color: #A9AAAD;
+    font-size: 3.73vw;
+    line-height: 6.67vw;
+    font-family: 'PingFang-SC-Medium';
+}
+
+.addPhoto {
+    color: #2D2D2D;
+    font-size: 3.73vw;
+    line-height: 7.46vw;
+}
+
+.addPhoto span {
+    color: #A9AAAD;
+}
+
+.photoList {
+    width: 100%;
+    height: 11.74vw;
+    padding-bottom: 2.0vw;
+}
+
+#photoList {
+    float: left;
+    width: 80%;
+    height: 11.74vw;
+}
+
+.addArea {
+    float: right;
+    width: 11.74vw;
+    height: 11.74vw;
+    position: relative;
+}
+
+#filePicker {
+    display: block;
+    cursor: pointer;
+    width: 11.74vw;
+    height: 11.74vw;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#fileImage {
+    position: absolute;
+    opacity: 0;
+    width: 11.74vw;
+    height: 11.74vw;
+    left: 0;
+    top: 0;
+}
+
+.onlook,
+.xsMoney {
+    width: 92%;
+    height: 11.7vw;
+    padding: 0 4%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3.73vw;
+    color: #2D2D2D;
+    background: #fff;
+}
+
+.xsMoney {
+    margin-top: 4.0vw;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.xsMoney input {
+    height: 11.7vw;
+}
+
+.onlook {
+    border-bottom: 1px solid #F1F1F1;
+    margin-bottom: 4.0vw;
+}
+
+.zixun {
+    width: 92%;
+    height: 13.06vw;
+    margin: 10.0vw auto;
+    text-align: center;
+    line-height: 13.06vw;
+    color: #fff;
+    background: #78A7EF;
+    font-size: 4.0vw;
+    border-radius: 8px;
+}

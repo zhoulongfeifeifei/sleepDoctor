@@ -1,0 +1,91 @@
+#container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height:100%;
+	background: #fff;
+}
+header{
+	width: 92%;
+	height: 12.8vw;
+	padding: 3.0vw 4%;
+	display: flex;
+	flex-direction: row;
+	font-size: 3.47vw;
+	color: #999;
+}
+.doctorInfo{
+	width: 42%;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	justify-content: flex-start;
+	margin-left: 5.0vw;
+}
+.hospital{
+	margin-top: 4.5vw;
+}
+.doctorDetial{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.doctorName{
+	color: #2D2D2D;
+	font-size: 4.0vw;
+}
+nav{
+	width: 100%;
+	height: 3.0vw;
+	background: #F1F1F1;
+}
+section{
+	width: 92%;
+	height: auto;
+	padding: 0 4%;
+	font-size: 3.47vw;
+	color: #999;
+}
+section p{
+	line-height: 11.46vw;
+}
+#xzw_starBox{position:relative;}
+#xzw_starBox .star{height:20px;width:120px;position:relative;background:url(../imgs/star.png) repeat-x;cursor:pointer}
+#xzw_starBox .star li{float:left;padding:0px;margin:0px}
+#xzw_starBox .star li a{display:block;width:24px;height:20px;overflow:hidden;text-indent:-9999px;position:absolute;z-index:5}
+#xzw_starBox .star li a:hover{background:url(../imgs/star.png) 0 -25px repeat-x;z-index:3;left:0}
+#xzw_starBox .star a.one-star{left:0}
+#xzw_starBox .star a.one-star:hover{width:24px}
+#xzw_starBox .star a.two-stars{left:24px}
+#xzw_starBox .star a.two-stars:hover{width:48px}
+#xzw_starBox .star a.three-stars{left:48px}
+#xzw_starBox .star a.three-stars:hover{width:72px}
+#xzw_starBox .star a.four-stars{left:72px}
+#xzw_starBox .star a.four-stars:hover{width:96px}
+#xzw_starBox .star a.five-stars{left:96px}
+#xzw_starBox .star a.five-stars:hover{width:120px}
+.current-rating{background:url(../imgs/star.png) 0 -25px repeat-x;position:absolute;height:20px;z-index:1;top:0;left:0}
+section .appraise{
+	display: block;
+	width: 100%;
+	height: 40.0vw;
+	font-size: 3.73vw;
+	color: #2E323A;
+	line-height: 8.53vw;
+	border: 1px solid #A9AAAD;
+	border-radius: 8px;
+	resize:none;
+	overflow-y: scroll;
+}
+.btn{
+	display: block;
+	width: 92%;
+	height: 13.06vw;
+	color: #fff;
+	font-size: 4.0vw;
+	background: #78A7EF;
+	text-align: center;
+	line-height: 13.06vw;
+	border-radius: 8px;
+	margin: 4.0vw auto;
+}

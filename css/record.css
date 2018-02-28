@@ -1,0 +1,44 @@
+body,html{
+	width: 100%;
+	height: 100%;
+}
+#container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	height:100%;
+	background: #F1F1F1;
+}
+.recodeList{
+	width: 100%;
+    font-size: 4.0vw;
+    overflow-y: scroll;
+}
+.recodeList li{
+    padding: 3.0vw 4.27vw;
+    font-size: 3.47vw;
+   color: #2E323A;
+    border-bottom: 1px solid #F1F1F1;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.adviceList li div{
+	display: flex;
+	flex-direction: column;
+}
+.recodeP{
+	margin-top: 2.0vw;
+}
+.recodeList li .timer{
+	color: #999;
+}
+.recodeList li .money{
+	color: #78A7EF;
+	font-size: 4.6vw;
+}
+.recodeList li .phone{
+	color: #FEC173 ;
+	font-size: 4.6vw;
+}

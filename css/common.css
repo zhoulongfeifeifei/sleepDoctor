@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/*CSS Reset*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+hgroup,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+figcaption,
+menu,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-family: "PingFang-SC-Medium";
+    background-color: #fff;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0;
+    font-size: 13.33vw;
+    /*是以  iphone6为基准，以100px字体大小为基准的    100/(750/100) = 13.33   */
+}
+
+li {
+    list-style: none;
+}
+
+input,
+textarea,
+button {
+    background: none;
+    outline: none;
+    border: 0px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    border: 0;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0em;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 0em;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+footer {
+    height: 13.33vw;
+    background-color: #fff;
+    z-index: 2;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.fixed-bottom1 {
+    position: fixed;
+    bottom: 0;
+}
+
+.heIght {
+    height: 100%;
+}
+
+.mask {
+    position: absolute;
+    width: 80%;
+    height: 13.33vw;
+    left: 10%;
+    top: 50%;
+    opacity: 0;
+    margin-top: -6.67vw;
+    background: #000;
+    font-size: 4.0vw;
+    color: #fff;
+    z-index: 999;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 13.33vw;
+}

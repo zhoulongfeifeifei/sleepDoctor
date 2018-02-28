@@ -1,0 +1,57 @@
+body,
+html {
+    /* width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; */
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.phone,
+.code {
+    width: 92%;
+    height: 13.13vw;
+    border-radius: 8px;
+    border: 1px solid #a9aaad;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    font-size: 7.4vw;
+}
+
+.phone {
+    margin-top: 18.6vw;
+}
+
+.code {
+    margin-top: 5.67vw;
+}
+
+.aline {
+    width: 1px;
+    height: 8.0vw;
+    background-color: #a9aaad;
+    margin-right: 6.33vw;
+}
+
+.getCode {
+    color: #78A7EF;
+}
+
+.submit {
+    width: 92%;
+    height: 13.13vw;
+    background-color: #78A7EF;
+    display: block;
+    color: #fff;
+    font-size: 4.3vw;
+    margin: 5.6vw auto;
+    border-radius: 8px;
+}
